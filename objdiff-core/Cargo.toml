@@ -38,7 +38,8 @@ flagset = "0.4"
 log = "0.4"
 memmap2 = "0.9"
 num-traits = "0.2"
-object = { version = "0.36", features = ["read_core", "std", "elf", "pe"], default-features = false }
+object = { git = "https://github.com/rjkiv/object.git ", features = ["read_core", "write_core", "std", "elf", "write_std"] }
+#object = { version = "0.36", features = ["read_core", "std", "elf", "pe"], default-features = false }
 pbjson = { version = "0.7", optional = true }
 prost = { version = "0.13", optional = true }
 serde = { version = "1.0", features = ["derive"] }
